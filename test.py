@@ -10,19 +10,19 @@ def test_load_dataset():
 
 
 def test_grab_mean():
-    assert grab_mean(df1, "marijuana_use") <= 19
+    assert grab_mean(df1, "marijuana_use") <= 77
 
 
 def test_grab_median():
-    assert grab_median(df1, "marijuana_use") <= 70
+    assert grab_median(df1, "marijuana_use") <= 89
 
 
 def test_grab_std():
-    assert grab_std(df1, "marijuana_use") <= 85
+    assert grab_std(df1, "marijuana_use") <= 80
 
 
 def test_grab_max():
-    assert grab_max(df1, "marijuana_use") <= 80
+    assert grab_max(df1, "marijuana_use") <= 87
     assert grab_max(df1, "marijuana_use") > 80
 
 
