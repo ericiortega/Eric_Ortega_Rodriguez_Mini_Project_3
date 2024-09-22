@@ -2,8 +2,10 @@
         library file 
 """
 
-import pandas as pd
+# import pandas as pd
+import polars as pl
 import matplotlib.pyplot as plt
+import altair as alt
 
 dataset = (
     "https://raw.githubusercontent.com/fivethirtyeight/data/master/drug-use-by-age/drug-use-by-age.csv"
@@ -11,7 +13,7 @@ dataset = (
 
 
 def load_dataset():
-    df = pd.read_csv(dataset)
+    df = pl.read_csv(dataset)
     return df
 
 def grab_mean(df, col):
@@ -29,18 +31,23 @@ def grab_max(df,col):
     return df[col].max()
 
 def create_histogram(df , col):
-    df[col].plot.hist(bins=10, edgecolor ='black')
-    plt.title(col)
+    df_pd = df.to_pandas()
+    
+    plt.hist(df_pd[col], bins=10, edgecolor='black')
+    plt.title(f'Histogram of {col}')
+    plt.xlabel(col)
+    plt.ylabel('Frequency')
+    plt.show()
 
 df1 = load_dataset()
 df1.head()
 
-mean_alc = grab_mean(df1,"alcohol_use")
+mean_alc = grab_mean(df1,"marijuana_use")
 
-median_alc = grab_median(df1,"alcohol_use")
+median_alc = grab_median(df1,"marijuana_use")
 
-std_alc = grab_std(df1,"alcohol_use")
+std_alc = grab_std(df1,"marijuana_use")
 
-max_alc = grab_max(df1,"alcohol_use")
+max_alc = grab_max(df1,"marijuana_use")
 
-create_histogram(df1, "alcohol_use")
+create_histogram(df1, "marijuana_use")

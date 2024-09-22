@@ -9,6 +9,9 @@ boto3==1.24.87
 #data science
 pandas
 matplotlib
+polars
+altair==5.4.0
+pyarrow
 
 #web
 fastapi==0.85.0

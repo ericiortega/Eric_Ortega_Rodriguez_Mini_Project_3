@@ -1,10 +1,10 @@
 
 [![CI](https://github.com/nogibjj/Eric_Ortega_Rodriguez_Mini_Project_2/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Eric_Ortega_Rodriguez_Mini_Project_2/actions/workflows/hello.yml)
 
-# Eric Ortega Rodriguez's Pandas Descriptive Statistics Script
+# Eric Ortega Rodriguez's Polars Descriptive Statistics Script
 
-## ☑️ Requirements (Mini Project 2):
-1. Python script using Pandas for descriptive statistics
+## ☑️ Requirements (Mini Project 3):
+1. Python script using Polars for descriptive statistics
 2. Read a dataset (CSV or Excel)
 3. Generate summary statistics (mean, median, standard deviation)
 4. Create at least one data visualization
@@ -46,6 +46,6 @@ Function: A Makefile is used to automate tasks in software development, especial
 Function: test.py is a script typically used to contain test cases for a project and data set. It includes functions or classes designed to verify that the code works as expected. 
 
 ## ☑️ Visualization: 
-Highlights the frequency of alcohol use among different age groups.
+Highlights the frequency of marijuana use among different age groups.
 
-![Visualization](Chart.png)
+![Visualization](Figure_1.png)
