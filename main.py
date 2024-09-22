@@ -42,12 +42,12 @@ def create_histogram(df , col):
 df1 = load_dataset()
 df1.head()
 
-mean_alc = grab_mean(df1,"marijuana_use")
+mean_mar = grab_mean(df1,"marijuana_use")
 
-median_alc = grab_median(df1,"marijuana_use")
+median_mar = grab_median(df1,"marijuana_use")
 
-std_alc = grab_std(df1,"marijuana_use")
+std_mar = grab_std(df1,"marijuana_use")
 
-max_alc = grab_max(df1,"marijuana_use")
+max_mar = grab_max(df1,"marijuana_use")
 
 create_histogram(df1, "marijuana_use")
