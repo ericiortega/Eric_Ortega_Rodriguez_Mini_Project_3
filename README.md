@@ -1,5 +1,5 @@
 
-[![CI](https://github.com/nogibjj/Eric_Ortega_Rodriguez_Mini_Project_2/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Eric_Ortega_Rodriguez_Mini_Project_2/actions/workflows/hello.yml)
+[![CI](https://github.com/ericiortega/Eric_Ortega_Rodriguez_Mini_Project_3/actions/workflows/hello.yml/badge.svg)](https://github.com/ericiortega/Eric_Ortega_Rodriguez_Mini_Project_3/actions/workflows/hello.yml)
 
 # Eric Ortega Rodriguez's Polars Descriptive Statistics Script
 
