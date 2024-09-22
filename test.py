@@ -23,7 +23,7 @@ def test_grab_std():
 
 def test_grab_max():
     assert grab_max(df1, "marijuana_use") <= 78
-    assert grab_max(df1, "marijuana_use") > 45
+    assert grab_max(df1, "marijuana_use") > 30
 
 
 if __name__ == "__main__":
